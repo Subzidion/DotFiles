@@ -1,0 +1,38 @@
+urxvt.font: xft:Hack:pixelsize=12
+
+urxvt.scrollBar: false
+
+urxvt.foreground: #D7D7D7
+urxvt.background: #212121
+
+! Black
+urxvt.color0:  #303030
+urxvt.color8:  #404040
+
+! Red
+urxvt.color1: #CF6A4C
+urxvt.color9: #FF9D80
+
+! Green
+urxvt.color2: #99AD6A
+urxvt.color10: #C3E6AD
+
+! Yellow
+urxvt.color3: #FAD07A
+urxvt.color11: #FFEFBF
+
+! Blue
+urxvt.color4: #8197BF
+urxvt.color12: #ACCAFF
+
+! Magenta
+urxvt.color5: #8787AF
+urxvt.color13: #C4C4FF
+
+! Cyan
+urxvt.color6: #668799
+urxvt.color14: #80BFAF
+
+! White
+urxvt.color7: #888888
+urxvt.color15: #E8E8D3
