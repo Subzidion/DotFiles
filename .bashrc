@@ -16,6 +16,7 @@ shopt -s histappend
 shopt -s hostcomplete
 shopt -s nocaseglob
 
+export PS1='[\u@\h \W]\$'
 export HISTSIZE=10000
 export HISTFILESIZE=${HISTSIZE}
 export HISTCONTROL=ignoreboth
@@ -28,6 +29,8 @@ alias la='ls -la --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --colo
 alias clear='clear;screenfetch'
 alias grep='grep --color=tty -d skip'
 alias cp="cp -i"                          # confirm before overwriting something
+alias df='df -h'                          # human-readable sizes
+alias free='free -m'                      # show sizes in MB
 alias update='yaourt -Syua'
 
 screenfetch
