@@ -1,28 +1,26 @@
+filetype indent on
+filetype plugin on
+
 syntax enable
+set encoding=utf8
+
+set nobackup
+set nowb
+set noswapfile
 
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+
 set expandtab
+set smarttab
 
 set number
 set relativenumber
 
-filetype indent plugin on
+set smartcase
+set hlsearch
+set incsearch
+set showmatch
 
 set background=dark
-
-" I will not use the arrow keys.
-" I will not use the arrow keys.
-" I will not use the arrow keys.
-" I will not use the arrow keys.
-" I will not use the arrow keys.
-" I will not use the arrow keys.
-inoremap  <Up>     <NOP>
-inoremap  <Down>   <NOP>
-inoremap  <Left>   <NOP>
-inoremap  <Right>  <NOP>
-noremap   <Up>     <NOP>
-noremap   <Down>   <NOP>
-noremap   <Left>   <NOP>
-noremap   <Right>  <NOP>
