@@ -5,7 +5,7 @@ syntax enable
 set encoding=utf8
 
 set nobackup
-set nowb
+se nowb
 set noswapfile
 
 set tabstop=4
