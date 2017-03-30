@@ -16,12 +16,17 @@ shopt -s histappend
 shopt -s hostcomplete
 shopt -s nocaseglob
 
-export PS1='[\u@\h \W]\$'
+export PS1='[\u@\h \W]\$ '
 export HISTSIZE=10000
 export HISTFILESIZE=${HISTSIZE}
 export HISTCONTROL=ignoreboth
 export EDITOR=/usr/bin/vim
-export BROWSER=/usr/bin/firefox
+export BROWSER=/usr/bin/chromium
+
+export GOPATH=/home/subzidion/work/Go
+export ROSIE_HOME=/home/subzidion/work/rosie-pattern-language
+
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 alias ls='ls -a --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
 alias ll='ls -l --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
@@ -31,6 +36,12 @@ alias grep='grep --color=tty -d skip'
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
-alias update='yaourt -Syua'
+alias update='pacaur -Syu && sudo npm update -g'
+alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
+
+set -o vi
 
 screenfetch
+
+# added by travis gem
+[ -f /home/subzidion/.travis/travis.sh ] && source /home/subzidion/.travis/travis.sh
